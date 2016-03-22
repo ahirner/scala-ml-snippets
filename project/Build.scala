@@ -39,7 +39,7 @@ object WorkshopBuild extends Build {
     ),
     libraryDependencies ++= Seq(
       "org.scalanlp" %% "breeze" % "0.12",
-      "org.scalanlp" %% "breeze-natives" % "0.12",
+      "org.scalanlp" %% "breeze-natives" % "0.12"
     ),
     shellPrompt <<= name(name => { state: State =>
       object devnull extends ProcessLogger {
