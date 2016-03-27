@@ -38,8 +38,7 @@ object WorkshopBuild extends Build {
       "Sonatype Snapshots" at "https://oss.sonatype.org/content/repositories/snapshots/"
     ),
     libraryDependencies ++= Seq(
-      "org.scalanlp" %% "breeze" % "0.12",
-      "org.scalanlp" %% "breeze-natives" % "0.12"
+      "org.scalanlp" %% "breeze" % "0.12"
     ),
     shellPrompt <<= name(name => { state: State =>
       object devnull extends ProcessLogger {
